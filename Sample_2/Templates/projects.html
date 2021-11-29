@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if t_project %}
+        <title>{{t_project}}</title>
+    {% else %}
+        <title>Document</title>
+    {% endif %}
+</head>
+<body>
+    <h1>This is the Project Page !</h1>
+    <h2>List of Projects that need to be Performed : </h2>
+        {% for i in range(len_list) %}
+        <b>{{i + 1}} : {{l_pro[i]}}</b><br>
+        {% endfor %}
+</body>
+</html>
